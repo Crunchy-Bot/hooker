@@ -12,7 +12,7 @@ IMAGE_SERVER_API_KEY = os.getenv("IMAGE_SERVER_API_KEY")
 
 LUST_HOST = os.getenv("LUST_HOST", "https://images.crunchy.gg")
 
-CRUNCHY_API_URL = os.getenv("CRUNCHY_API_URL", "http://192.168.1.132:8000/v0")
+CRUNCHY_API_URL = os.getenv("CRUNCHY_API_URL")
 CRUNCHY_API_AUTH = os.getenv("CRUNCHY_API_AUTH")
 
 NEWS_RSS_URL = os.getenv("NEWS_RSS_URL", "https://www.crunchyroll.com/newsrss")
