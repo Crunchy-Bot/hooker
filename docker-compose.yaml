@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  keydb:
+    image: eqalpha/keydb:latest
+    container_name: keydb
+    ports:
+      - "6379:6379"
+  celery:
+    build: .
+    environment:
+      - REDIS_USER=admin
+      - REDIS_PASSWORD=admin
+      - REDIS_HOST=keydb
+    env_file:
+      - ./.env
+    restart: always

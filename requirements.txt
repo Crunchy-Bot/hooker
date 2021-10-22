@@ -1,0 +1,8 @@
+aioredis
+feedparser
+bs4
+lxml
+discord.py
+ratelimiter
+requests
+aiohttp
